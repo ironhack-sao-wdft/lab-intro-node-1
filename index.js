@@ -43,7 +43,7 @@ class SortedList {
       return this.items.reduce((total, current) => total + current);
       // return this.items.reduce((total, current) => {
       //   total + current;
-      // });
+      // }); ?
     }
   }
 
@@ -51,7 +51,7 @@ class SortedList {
     if (this.length === 0) {
       throw new Error("EmptySortedList");
     } else {
-      return this.items.sum() / this.length;
+      return this.sum() / this.length;
     }
   }
 }
