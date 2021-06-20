@@ -9,7 +9,7 @@ class SortedList {
     this.items.sort((a, b) => {
       return a - b;
     });
-    // this.length = this.items.length
+    this.length = this.items.length
   }
 
   get(pos) {
