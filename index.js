@@ -9,7 +9,7 @@ class SortedList {
     this.items.sort((a, b) => {
       return a - b;
     });
-    this.length = this.items.length
+    this.length = this.items.length;
   }
 
   get(pos) {
@@ -40,9 +40,10 @@ class SortedList {
     if (this.length === 0) {
       throw new Error("EmptySortedList");
     } else {
-      return this.items.reduce((total, current) => {
-        total + current;
-      });
+      return this.items.reduce((total, current) => total + current);
+      // return this.items.reduce((total, current) => {
+      //   total + current;
+      // });
     }
   }
 
